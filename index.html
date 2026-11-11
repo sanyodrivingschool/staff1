@@ -9,6 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="三陽自動車学校｜免許、どこで取る？熊本駅から歩けて最短16日">
   <meta property="og:description" content="熊本駅・上熊本駅から歩ける三陽自動車学校。自宅から通って最短16日（AT）、送迎バス20台、学科はスマホで24時間。料金や期間はLINEで30秒で相談できます。">
+  <!-- OGP画像：公開URLが決まったら絶対URLに書き換え（例：https://<ユーザー名>.github.io/sanyo-lp/images/ogp.png） -->
   <meta property="og:image" content="./images/ogp.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- 計測：GTMを使う場合はここに既存のタグ（GTM-P2TM5Z6）を貼る -->
@@ -203,6 +204,9 @@
   .pcard__btm small{display:block;font-size:11px;color:var(--mute)}
   .pcard__btm p{margin:2px 0 0;font-weight:900;font-size:14px;line-height:1.6}
   .swipe{margin:6px 0 0;text-align:center;font-family:var(--f-mono);font-size:11px;color:var(--mute)}
+  .slot{overflow:hidden}
+  .slot:not(.fv__photo){position:relative}
+  .slot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
   .ph{display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;color:#5F5C66;background-color:#E4E2E6;background-image:repeating-linear-gradient(135deg,rgba(27,30,39,.06) 0 10px,transparent 10px 20px)}
   
   /* voice */
@@ -332,7 +336,7 @@
       <div class="fv__vis rise3">
         <div class="fv__ring" aria-hidden="true"></div>
         <!-- 差し替え：笑顔の学生（切り抜き or 縦長写真）720×960 -->
-        <div class="fv__photo ph" style="aspect-ratio:3/4;border:2px solid #1B1E27;border-bottom:0;border-radius:120px 120px 0 0">【写真差し替え】<br>笑顔の学生<br>720×960</div>
+        <div class="fv__photo ph slot" style="aspect-ratio:3/4;border:2px solid #1B1E27;border-bottom:0;border-radius:120px 120px 0 0"><img src="./images/fv.webp" alt="三陽自動車学校のスタッフ" width="720" height="960" fetchpriority="high" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>【写真差し替え】<br>images/fv.webp<br>720×960</span></div>
         <div class="talk win" style="margin-bottom:18px">
           <div class="win__bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>talk.line</div>
           <div class="win__body">
@@ -399,25 +403,25 @@
     <figure class="pcard">
       <div class="pcard__top" style="background:#F0562E">#4車線コース
         <!-- 差し替え：田崎校 4車線コース 1080×1080 -->
-        <div class="ph">【写真差し替え】<br>4車線コース</div>
+        <div class="ph slot"><img src="./images/about-1.webp" alt="田崎校の4車線教習コース" width="1080" height="1080" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>【写真差し替え】<br>images/about-1.webp</span></div>
       </div>
       <figcaption class="pcard__btm"><small class="en">Tasaki Course</small><p>県内唯一の4車線コース（田崎校）。広くてゆとりをもって練習できる。</p></figcaption>
     </figure>
     <figure class="pcard">
       <div class="pcard__top" style="background:#7C4DEB">#街中の路上教習
-        <div class="ph">【写真差し替え】<br>教習車</div>
+        <div class="ph slot"><img src="./images/about-2.webp" alt="三陽自動車学校の教習車" width="1080" height="1080" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>【写真差し替え】<br>images/about-2.webp</span></div>
       </div>
       <figcaption class="pcard__btm"><small class="en">City Drive</small><p>市電沿い・街中を走るから、免許を取ったあと熊本の道に強い。</p></figcaption>
     </figure>
     <figure class="pcard">
       <div class="pcard__top" style="background:#0F8A75">#ロビーでWi-Fi
-        <div class="ph">【写真差し替え】<br>ロビー・待合</div>
+        <div class="ph slot"><img src="./images/about-3.webp" alt="校内のロビー・待合スペース" width="1080" height="1080" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>【写真差し替え】<br>images/about-3.webp</span></div>
       </div>
       <figcaption class="pcard__btm"><small class="en">Free Wi-Fi</small><p>空き時間は校内Wi-Fiで、スマホから学科も受けられる。</p></figcaption>
     </figure>
     <figure class="pcard">
       <div class="pcard__top" style="background:#E2336F">#受持ちの先生
-        <div class="ph">【写真差し替え】<br>指導員</div>
+        <div class="ph slot"><img src="./images/about-4.webp" alt="三陽自動車学校の指導員" width="1080" height="1080" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>【写真差し替え】<br>images/about-4.webp</span></div>
       </div>
       <figcaption class="pcard__btm"><small class="en">Your Instructor</small><p>入校から卒業まで、受持ちの指導員が担当します。</p></figcaption>
     </figure>
@@ -505,19 +509,19 @@
   </div>
   <div class="slider" tabindex="0" aria-label="卒業生の声（横にスクロール）">
     <figure class="vcard">
-      <div class="vcard__hd"><div class="ph">写真</div><div style="line-height:1.4"><p style="margin:0;font-weight:900">[イニシャル]さん</p><p style="margin:2px 0 0;font-size:12px;color:#5F5C66">[学年・属性] ／ 普通車AT</p></div></div>
+      <div class="vcard__hd"><div class="ph slot"><img src="./images/voice-1.webp" alt="卒業生の写真" width="240" height="240" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>voice-1</span></div><div style="line-height:1.4"><p style="margin:0;font-weight:900">[イニシャル]さん</p><p style="margin:2px 0 0;font-size:12px;color:#5F5C66">[学年・属性] ／ 普通車AT</p></div></div>
       <p class="vcard__res"><span class="grad-txt">[◯]日</span>で卒業！</p>
       <blockquote>[卒業生のひと言。本人の掲載許諾を取ったもの]</blockquote>
       <span class="tbd">要差し替え</span>
     </figure>
     <figure class="vcard">
-      <div class="vcard__hd"><div class="ph">写真</div><div style="line-height:1.4"><p style="margin:0;font-weight:900">[イニシャル]さん</p><p style="margin:2px 0 0;font-size:12px;color:#5F5C66">[学年・属性] ／ 普通車MT</p></div></div>
+      <div class="vcard__hd"><div class="ph slot"><img src="./images/voice-2.webp" alt="卒業生の写真" width="240" height="240" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>voice-2</span></div><div style="line-height:1.4"><p style="margin:0;font-weight:900">[イニシャル]さん</p><p style="margin:2px 0 0;font-size:12px;color:#5F5C66">[学年・属性] ／ 普通車MT</p></div></div>
       <p class="vcard__res"><span class="grad-txt">[◯]日</span>で卒業！</p>
       <blockquote>[卒業生のひと言。本人の掲載許諾を取ったもの]</blockquote>
       <span class="tbd">要差し替え</span>
     </figure>
     <figure class="vcard">
-      <div class="vcard__hd"><div class="ph">写真</div><div style="line-height:1.4"><p style="margin:0;font-weight:900">[お名前]様</p><p style="margin:2px 0 0;font-size:12px;color:#5F5C66">保護者</p></div></div>
+      <div class="vcard__hd"><div class="ph slot"><img src="./images/voice-3.webp" alt="保護者の方の写真" width="240" height="240" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>voice-3</span></div><div style="line-height:1.4"><p style="margin:0;font-weight:900">[お名前]様</p><p style="margin:2px 0 0;font-size:12px;color:#5F5C66">保護者</p></div></div>
       <p class="vcard__res">[見出しになる一言]</p>
       <blockquote>[保護者の方の声。本人の掲載許諾を取ったもの]</blockquote>
       <span class="tbd">要差し替え</span>
@@ -602,7 +606,7 @@
   <div class="acc">
     <article class="win" style="color:#1B1E27">
       <div class="win__bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>kamikumamoto.map</div>
-      <div class="ph">【地図・外観 差し替え】上熊本駅校</div>
+      <div class="ph slot"><img src="./images/access-kamikumamoto.webp" alt="上熊本駅校の外観" width="960" height="560" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>【写真差し替え】<br>images/access-kamikumamoto.webp</span></div>
       <div class="win__body">
         <h3>上熊本駅校</h3>
         <p>熊本市西区上熊本3丁目26-3<br>上熊本駅から徒歩圏</p>
@@ -611,7 +615,7 @@
     </article>
     <article class="win" style="color:#1B1E27">
       <div class="win__bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>tasaki.map</div>
-      <div class="ph">【地図・外観 差し替え】熊本駅田崎校</div>
+      <div class="ph slot"><img src="./images/access-tasaki.webp" alt="熊本駅田崎校の外観" width="960" height="560" loading="lazy" decoding="async" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace(/\.webp$/,'.jpg')}else{this.remove()}"><span>【写真差し替え】<br>images/access-tasaki.webp</span></div>
       <div class="win__body">
         <h3>熊本駅田崎校</h3>
         <p>熊本市西区田崎2丁目1-11<br>熊本駅から徒歩圏・県内唯一の4車線コース</p>
